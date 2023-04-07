@@ -4,11 +4,14 @@
 
 - SQL 전문가 가이드 The Guide for SQL Professional
 
-[![book image](https://image.yes24.com/goods/90613346)](http://www.yes24.com/Product/Goods/90613346)
- 
+<a href="http://www.yes24.com/Product/Goods/90613346"> 
+    <img src="https://image.yes24.com/goods/90613346" alt="" width="400" />
+</a>
+
+
 ## 📅 시험 일정
 
-[![시험 일정](./imgs/1.png)](https://www.dataq.or.kr/www/accept/schedule.do)
+[![시험 일정](https://user-images.githubusercontent.com/67765871/230524461-dc4e231d-521f-4ed4-b55c-90e6d53ce150.png)](https://www.dataq.or.kr/www/accept/schedule.do)
 
 1. 제 49회 SQLD 6월 10일 (토)
 2. 제 49회 SQLP 9월 9일 (토)
@@ -28,8 +31,8 @@
 
 ### 스터디 시작
 
-4. PR review 및 몰랐던/알면 좋을 내용 공유/답변 
-5. issue 내 문제 & 답변 review 
+4. PR review 및 몰랐던/알면 좋을 내용 공유/답변
+5. issue 내 문제 & 답변 review
 6. 다음 스터디 범위 결정
 
 ### 스터디 마무리
@@ -46,7 +49,7 @@
 ### PR 양식
 
 - 제목 : 1회차 - 1장 ~ 3장
-- template 
+- template
 
 ```text
 ### 이해 어려운 내용
