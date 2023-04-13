@@ -604,18 +604,26 @@ from 주문
 </tr>
 </table>
 
+<table>
+<tr>
+<td>
+
 ```sql
 select sum(주문금액) - sum(주문취소금액) col1
         , nvl(sum(주문금액 - 주문취소금액), 0) col2
         , nvl(sum(주문금액), 0) - nvl(sum(주문취소금액), 0) col3
 ```
-
+</td>
+<td>
 <table>
 <tr>
 <td align="center" colspan="3">수행 결과</td>
 </tr>
 <tr>
 <td align="center">null(= 300,000 - null)</td><td align="center">0(= nvl(300,000 - null, 0)</td><td align="center">300,000(= 300,000 - 0)</td>
+</tr>
+</table>
+</td>
 </tr>
 </table>
 
@@ -701,7 +709,7 @@ from 주문
 </tr>
 </table>
 </td>
-<td>
+<td align="center">
 <table>
 <tr>
 <td colspan="4" align="center">주문 상품</td>
@@ -722,7 +730,7 @@ from 주문
 </td>
 </tr>
 <tr>
-<td>
+<td align="center">
 <table>
 <tr>
 <td colspan="5" align="center">주문 상품</td>
@@ -742,7 +750,7 @@ from 주문
 </table>
 </td>
 
-<td>
+<td align="center">
 <table>
 <tr>
 <td colspan="5" align="center">주문 상품</td>
