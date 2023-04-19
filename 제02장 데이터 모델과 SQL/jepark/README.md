@@ -140,8 +140,8 @@
 ---
 ### :pencil2: 4. Null 속성의 이해
 
-#### 1. NULL 값의 연산은 언제나 NULL이다. 
-> NULL 체크 및 값 치환 메서드 : NVL == IFNULL == ISNULL
+#### 1. NULL 값의 연산은 언제나 NULL이다.
+> NULL 체크 및 값 치환 메서드 : NVL == IFNULL == ISNULL <br/>
 > NVL(컬럼, '지정값') : 컬럼에 지정된 값이 NULL일 경우 지정된 값으로 치환되어 출력됨.
 
 ```SQL
