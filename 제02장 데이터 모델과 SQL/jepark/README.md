@@ -19,6 +19,7 @@
 
 [이미지 1-1. 제2정규화를 위배하는 Entity]
 ![스크린샷 2023-04-17 오전 8 11 22](https://user-images.githubusercontent.com/130142107/232348536-93d93c95-3f4b-476f-aa3b-81e8f6df6a07.png)
+
 * 함수적 종속성 
 
   ![스크린샷 2023-04-17 오전 8 09 42](https://user-images.githubusercontent.com/130142107/232348253-c79cd34f-037f-4fcb-8b1b-2670847d8415.png)
