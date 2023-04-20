@@ -44,8 +44,8 @@
 > 모든 데이터는 테이블에 등록됨 (일종의 집합 개념)
 
 <div align="center">
-    <img src="./imgs/1.png" alt="" width="400" />
-    <img src="./imgs/2.png" alt="" width="400" />
+    <img src="./img/1.png" alt="" width="400" />
+    <img src="./img/2.png" alt="" width="400" />
 </div>
 
 ### 제2절. SELECT
@@ -78,7 +78,7 @@ SELECT [ALL/DISTINCT] 출력대상 컬럼명, ...FROM 테이블명;
 >           
 >       
 <div align="center">
-    <img src="./imgs/3.png" alt="" width="400" />
+    <img src="./img/3.png" alt="" width="400" />
 </div>
 > 
 > - dual 테이블은 오라클에서 자동으로 생성되는 테이블이다.
