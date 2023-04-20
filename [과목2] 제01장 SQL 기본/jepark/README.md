@@ -77,9 +77,11 @@ SELECT [ALL/DISTINCT] 출력대상 컬럼명, ...FROM 테이블명;
 >     ⇒ MySql은 절들을 무시하며 참조할 테이블이 없는 경우 FROM DUAL을 필요로 하지 않습니다.
 >           
 >       
+
 <div align="center">
     <img src="./img/3.png" alt="" width="400" />
 </div>
+
 > 
 > - dual 테이블은 오라클에서 자동으로 생성되는 테이블이다.
 > - dual 테이블은 sys 스키마에 있지만 모든 사용자가 엑세스할 수 있다.
