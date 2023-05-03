@@ -270,10 +270,10 @@ drop view v_player_name;
 </tr>
 <tr>
 <td>
-<img src="./img/2.png" alt="" width="400" />
+<img src="./img/2.png" alt="" />
 </td>
 <td>
-<img src="./img/3.png" alt="" width="400" />
+<img src="./img/3.png" alt="" />
 </td>
 </tr>
 </table> 
@@ -304,7 +304,7 @@ order by DEPT.DNAME, emp.JOB;
 ```
 </td>
 <td>
-<img src="./img/4.png" alt="" width="550" />
+<img src="./img/4.png" alt="" />
 </td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ order by DEPT.DNAME, emp.JOB;
 ```
 </td>
 <td>
-<img src="./img/5.png" alt="" width="650" />
+<img src="./img/5.png" alt=""  />
 </td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ order by DEPT.DNAME, emp.JOB;
 ```
 </td>
 <td>
-<img src="./img/6.png" alt="" width="650" />
+<img src="./img/6.png" alt=""  />
 </td>
 </tr>
 </table>
@@ -390,7 +390,7 @@ order by DEPT.DNAME, emp.JOB;
 ```
 </td>
 <td>
-<img src="./img/7.png" alt="" width="650" />
+<img src="./img/7.png" alt="" />
 </td>
 </tr>
 </table>
@@ -418,7 +418,7 @@ order by DEPT.DNAME, emp.JOB;
 ```
 </td>
 <td>
-<img src="./img/8.png" alt="" width="650"/>
+<img src="./img/8.png" alt="" />
 </td>
 </tr>
 </table>
@@ -469,7 +469,7 @@ select job, ENAME, SAL,
 ```
 </td>
 <td>
-<img src="./img/9.png" alt="" width="600"/>
+<img src="./img/9.png" alt="" />
 </td>
 </tr>
 </table>
@@ -493,7 +493,7 @@ select job, ENAME, SAL,
 ```
 </td>
 <td>
-<img src="./img/10.png" alt="" width="650" />
+<img src="./img/10.png" alt=""  />
 </td>
 </tr>
 </table>
@@ -517,7 +517,7 @@ select job, ENAME, SAL,
 ```
 </td>
 <td>
-<img src="./img/11.png" alt="" width="650" />
+<img src="./img/11.png" alt=""  />
 </td>
 </tr>
 </table>
@@ -548,7 +548,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/12.png" alt="" width="600" />
+<img src="./img/12.png" alt=""  />
 </td>
 </tr>
 </table>
@@ -575,7 +575,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/13.png" alt="" width="600" />
+<img src="./img/13.png" alt=""  />
 </td>
 </tr>
 <tr>
@@ -591,7 +591,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/14.png" alt="" width="600" />
+<img src="./img/14.png" alt="" />
 </td>
 </tr>
 </table>
@@ -661,7 +661,7 @@ where job = 'salesman';
 ```
 </td>
 <td>
-<img src="./img/15.png" alt="" width="500" />
+<img src="./img/15.png" alt="" />
 </td>
 </tr>
 </table>
@@ -685,7 +685,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/16.png" alt="" width="800" />
+<img src="./img/16.png" alt="" />
 </td>
 </tr>
 </table>
@@ -710,7 +710,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/17.png" alt="" width="800" />
+<img src="./img/17.png" alt="" />
 </td>
 </tr>
 </table>
@@ -735,7 +735,7 @@ from emp;
 ```
 </td>
 <td>
-<img src="./img/18.png" alt="" width="800" />
+<img src="./img/18.png" alt="" />
 </td>
 </tr>
 </table>
@@ -795,7 +795,7 @@ order by sal desc;
 ```
 </td>
 <td>
-<img src="./img/19.png" alt="" width="200" />
+<img src="./img/19.png" alt="" />
 </td>
 </tr>
 <tr>
@@ -809,7 +809,7 @@ order by sal desc;
 ```
 </td>
 <td>
-<img src="./img/20.png" width="200" alt="" />
+<img src="./img/20.png" alt="" />
 </td>
 </tr>
 </table>
@@ -843,7 +843,7 @@ fetch first 5 rows only;
 ```
 </td>
 <td>
-<img src="./img/21.png" alt="" width="700" />
+<img src="./img/21.png" alt="" />
 </td>
 </tr>
 <tr>
@@ -857,7 +857,7 @@ offset 5 rows;
 ```
 </td>
 <td>
-<img src="./img/22.png" alt="" width="700" />
+<img src="./img/22.png" alt="" />
 </td>
 </tr>
 </table>
@@ -917,13 +917,13 @@ connect by mgr = prior empno;
 ```
 </td>
 <td>
-<img src="./img/25.png" alt="" width="600" />
+<img src="./img/25.png" alt="" />
 </td>
 </tr>
 </table>
 
 <div align="center">
-    <img src="./img/26.png" alt="" width="400" />
+    <img src="./img/26.png" alt="" />
 </div>
 
 - 사원으로부터 사수 조회
@@ -943,13 +943,13 @@ connect by empno = prior mgr;
 ```
 </td>
 <td>
-<img src="./img/27.png" alt="" width="600" />
+<img src="./img/27.png" alt="" />
 </td>
 </tr>
 </table>
 
 <div align="center">
-    <img src="./img/28.png" alt="" width="400" />
+    <img src="./img/28.png" alt="" />
 </div>
 
 ## 7절 PIVOT 절과 UNPIVOT 절
@@ -978,7 +978,7 @@ pivot (
 ```
 </td>
 <td>
-<img src="./img/29.png" alt="" width="700" />
+<img src="./img/29.png" alt="" />
 </td>
 </tr>
 </table>
@@ -1016,7 +1016,7 @@ order by 1, 2;
 ```
 </td>
 <td>
-<img src="./img/30.png" alt="" width="700" />
+<img src="./img/30.png" alt="" />
 </td>
 </tr>
 </table>
@@ -1043,7 +1043,7 @@ from DUAL;
 ```
 </td>
 <td>
-<img src="./img/31.png" alt="" width="1000" />
+<img src="./img/31.png" alt="" />
 </td>
 </tr>
 </table>
