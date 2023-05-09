@@ -453,5 +453,5 @@ UNPIVOT(
 - REGEXP_REPLACE 함수 (mssql에 Replace 함수가 있어 특정 문자로 대체하는 점이 유사)
 
     <div align="left">
-        <img src="./img/last.gif" alt="" width="550" />
+        <img src="./img/last.gif" alt="" width="400" />
     </div>     
