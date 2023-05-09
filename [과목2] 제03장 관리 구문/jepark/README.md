@@ -501,3 +501,7 @@ TRUNCATE TABLE 테이블명;
     ```SQL 
     DROP USER 사용자명 CASCADE;
     ```
+    ![다운로드](https://user-images.githubusercontent.com/130142107/233963610-d2cecc4a-0916-462e-adad-d6a5a5cada07.jpeg)
+
+    
+    
