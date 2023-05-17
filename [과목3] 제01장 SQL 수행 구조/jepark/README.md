@@ -1,4 +1,6 @@
-![스크린샷 2023-05-17 오전 5.18.41.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a912b491-5b83-4790-97b0-4e67a1f4f9a2/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.18.41.png)
+<div align="center">
+    <img src="./img/1.png" alt="" width="800" />
+</div>
 
 <details>
 <summary> ##제 1절. 데이터베이스 아키텍처  </summary> 
@@ -10,42 +12,16 @@
 DBMS에 따른 db 정의가 상이함.
 
 |  오라클 | SQL Server | 
-
-|:---:|:---:|
-
-| 
-
-![스크린샷 2023-05-17 오전 12.21.20.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d12bfae-efd6-420c-a11f-5b45ddf6d984/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.21.20.png)
-
-| 
-
-![스크린샷 2023-05-17 오전 12.21.58.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/464bc29a-060e-4a29-a6c1-532263555c75/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_12.21.58.png)
-
-|
-
-| - 디스크에 저장된 데이터 집합 (Datafile, Redo Log File, Control File)
-  -  **Instance** : `[SGA](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=qowndyd&logNo=220995596404) 공유 메모리 영역, 해당 영역에 접근하는 프로세스 집합` | 
-
-- 기본적으로 `1:1 접근 구조 (인스턴스 : DB)`
-
--  <div id ="footnotes-p">RAC(Real Application Cluster) 환경<sup>[1](#footnotes)</sup></div> 에서는 `n:1 접근 구조 성립(인스턴스 : DB)`  
-
- - 1개의 인스턴스는 여러 db 접근 불가 
-
-<div id=”footnotes”>[1](#footnotes-p) 참고링크 :
-
+|:---|:---|
+| <div align="center"><img src="./img/2.png" alt="" width="400" /></div>| <div align="center"><img src="./img/3.png" alt="" width="400" /></div>|
+| 디스크에 저장된 데이터 집합 (Datafile, Redo Log File, Control File) 
+  <br/> **Instance** : `[SGA](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=qowndyd&logNo=220995596404) 공유 메모리 영역, 해당 영역에 접근하는 프로세스 집합` | 기본적으로 `1:1 접근 구조 (인스턴스 : DB)` <br/> <div id ="footnotes-p">RAC(Real Application Cluster) 환경<sup>[1](#footnotes)</sup></div> 에서는 `n:1 접근 구조 성립(인스턴스 : DB)` <br/>1개의 인스턴스는 여러 db 접근 불가 
+<br/><div id=”footnotes”>[1](#footnotes-p) 참고링크 :
 [Oracle Real Application Cluster](https://www.oracle.com/kr/database/real-application-clusters/)
-
 [RAC](https://myalpaca.tistory.com/17) 
-
-  </div> 
-| - 1개의 인스턴스당 3만 2767개 db를 정의하여 사용이 가능 
-
-- 기본 생성 시, 시스템 디비 생성 : master, model, msdb, tempdb (사용자가 알잘딱 하게 사용자 정의 db 추가)
-
--Datafile : Redo Log File = 테이터 파일(.mdf) : 트랜잭션 로그 파일(.ldf) (1개의 Db당 생김.)
-
-| 
+ </div> | 1개의 인스턴스당 3만 2767개 db를 정의하여 사용이 가능 <br/>
+  기본 생성 시, 시스템 디비 생성 : master, model, msdb, tempdb (사용자가 알잘딱 하게 사용자 정의 db 추가)
+  <br/> Datafile : Redo Log File = 테이터 파일(.mdf) : 트랜잭션 로그 파일(.ldf) (1개의 Db당 생김.)| 
 
 ## 2. 프로세스
 
@@ -65,37 +41,22 @@ DBMS에 따른 db 정의가 상이함.
 👇🏻 클라이언트가 서버 프로세스와 연결하는 방식 👇🏻
 
 |  전용 서버 방식  | 공용 서버 방식 | 
-
 |:---:|:---:|
-
-|
-
-![스크린샷 2023-05-17 오전 1.08.01.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/966f808c-7618-4d68-afeb-3a579f98399d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.08.01.png)
-
-|
-
-![스크린샷 2023-05-17 오전 1.08.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e90327bc-9a0d-49ae-8f23-29c963681acb/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.08.16.png)
-
-| - 리스너가 서버 프로세스를 생성 
- - 서버 프로세스가 하나의 프로세스에 서비스를 제공 
-
-  ⇒ 연결 요청 🆙 서버 프로세스 생성 및 해제 🆙   ⇒ 성능 👎🏻
-  ⇒ OLTP 환경에서는 Connection Pooling 기법 사용이 필수적 
-
-|  - 1 : n = 서버 프로세스 : 사용자 세션 (`여러 사용자의 세션이 공유`)
-
- - 사용자 대신 Dispatcher가 명령을 SGA 내 요청 큐에 등록 그 내용을 서버에 전달, 서버는 응답 큐를 전송해서 Dispatcher가 사용자 프로세스에 전달 |
+|<div align="center"><img src="./img/4.png" alt="" width="400" /></div>|<div align="center"><img src="./img/5.png" alt="" width="400" /></div>|
+  리스너가 서버 프로세스를 생성 <br/> 서버 프로세스가 하나의 프로세스에 서비스를 제공 <br/>
+  ⇒ 연결 요청 🆙 서버 프로세스 생성 및 해제 🆙   ⇒ 성능 👎🏻 <br/>
+  ⇒ OLTP 환경에서는 Connection Pooling 기법 사용이 필수적 <br/> | 1 : n = 서버 프로세스 : 사용자 세션 (`여러 사용자의 세션이 공유`) <br/>사용자 대신 Dispatcher가 명령을 SGA 내 요청 큐에 등록 그 내용을 서버에 전달, 서버는 응답 큐를 전송해서 Dispatcher가 사용자 프로세스에 전달 |
 
 ### 2.2 백그라운드 프로세스
 
-![스크린샷 2023-05-17 오전 1.27.51.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/14bca113-ff90-4208-aa02-83e3c4ddeb16/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.27.51.png)
+<div align="center"><img src="./img/6.png" alt="" width="400" /></div>
 
-![스크린샷 2023-05-17 오전 1.29.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fc18bce-39a4-4925-8b79-975afd97052c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.29.02.png)
-
+<div align="center"><img src="./img/7.png" alt="" width="400" /></div>
+  
 ## 3. 데이터 저장 구조
 
-![스크린샷 2023-05-17 오전 1.32.31.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/38e6185d-26d4-4bf4-a67d-09d12b1e8ade/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.32.31.png)
-
+<div align="center"><img src="./img/8.png" alt="" width="400" /></div>
+  
 - 대부분 DBMS에서 I/O는 블록 단위로 수행 \*논리적 단위로 블록사용 \ (블록디바이스)
 - **`*블록 개수***가 SQL 성능 지표` (옵티마이저 친구의 두도 블록개수가 큰영향을 미침.)
 - `테이블 스페이스 = 물리적인 데이터 파일`을 의미
@@ -178,9 +139,8 @@ DBMS에 따른 db 정의가 상이함.
 
 ## SQL 처리 과정
 
-![스크린샷 2023-05-17 오전 4.46.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bf0fa050-4414-4877-8de2-651db74023b5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.46.13.png)
-
-![스크린샷 2023-05-17 오전 4.46.48.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d97d4a8c-281c-4e03-8cdc-8d1795c1913d/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_4.46.48.png)
+<div align="center"><img src="./img/9.png" alt="" width="400" /></div>
+<div align="center"><img src="./img/10.png" alt="" width="400" /></div>
 
 ## SQL 옵티마이저
 
@@ -219,8 +179,8 @@ DBMS에 따른 db 정의가 상이함.
 
 ## 3. Sequenial I/O vs Random I/O
 
-![스크린샷 2023-05-17 오전 5.10.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ba518df-8c32-4fec-b75e-74579e5adb64/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.10.50.png)
-
+<div align="center"><img src="./img/11.png" alt="" width="400" /></div>
+  
 - 시퀀셜 액세스는 레코드간 논리적 또는 물리적인 순서를 따라 차례대로 읽어 나가는 방식
     - 인덱스 리프블록에 위치한 모든 레코드는 포인터를 따라 논리적으로 연결돼 있고, 이 포인터를 따라 스캔
 - 랜덤 액세스 (Random I/O) 발생량을 줄이는 것이 해당 단락에서 I/O 튜닝의 핵심 원리
@@ -248,7 +208,7 @@ DBMS에 따른 db 정의가 상이함.
 
 ### 수고하셨^읍^니다.
 
-![스크린샷 2023-05-17 오전 5.17.25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/72e713b9-9a5f-43a6-a6b5-a2fd4c729601/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-05-17_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_5.17.25.png)
+<div align="center"><img src="./img/12.png" alt="" width="400" /></div>
 
 </div>
 </details>
