@@ -3,7 +3,7 @@
 </div>
 
 <details>
-<summary> ##제 1절. 데이터베이스 아키텍처  </summary> 
+<summary> 제 1절. 데이터베이스 아키텍처  </summary> 
 
 <div markdown="1">
 
@@ -133,7 +133,7 @@ DBMS에 따른 db 정의가 상이함.
 </details>
 
 <details>
-<summary> ##제 2절. SQL 처리과정  </summary> 
+<summary> 제 2절. SQL 처리과정  </summary> 
 
 <div markdown="1">
 
@@ -159,7 +159,7 @@ DBMS에 따른 db 정의가 상이함.
 </details>
 
 <details>
-<summary> ##제 3절. 데이터베이스 I/O 메커니즘  </summary> 
+<summary> 제 3절. 데이터베이스 I/O 메커니즘  </summary> 
 
 <div markdown="1">
 
