@@ -130,7 +130,7 @@ delete from t where no <= 5000;
 - distinct value 개수가 적을 때 효율 &darr; &rarr; 다양한 조건절이 사용되는 쿼리에 유리
 - B*Tree index보다 훨씬 적은 용량 차지 &rarr; index가 여러개 필요한 대용량 테이블에 유리 
 - distinct value 개수가 많으면 B*Tree index 보다 공간 많이 차지
-- Lock에 의한 DML 부하 심함 &rarr; record 하나만 변겨왿더라도 비트맵 범위에 속한 모든 레코드 lock
+- Lock에 의한 DML 부하 심함 &rarr; record 하나만 변경되더라도 비트맵 범위에 속한 모든 레코드 lock
 - OLAP 환경에 적합
 
 #### 리버스 키 인덱스
