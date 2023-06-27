@@ -690,7 +690,7 @@ where e1.deptno = e2.deptno
 </tr>
 </table>
 
-#### 조건절 Pushdown
+#### 조인조건 Pushdown
 
 <table>
 <tr>
